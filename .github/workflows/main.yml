@@ -15,4 +15,4 @@ jobs:
 
       - name: Run commands on local device via SSH
         run: |
-          ssh -o StrictHostKeyChecking=no nvidia@127.0.0.1 -p 2222 "ls"
+          sudo ssh -p 2222 nvidia@127.0.0.1 nvidia@127.0.0.1 -o StrictHostKeyChecking=no "ls"
