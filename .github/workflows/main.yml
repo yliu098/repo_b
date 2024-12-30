@@ -15,4 +15,4 @@ jobs:
 
       - name: Run commands on local device via SSH
         run: |
-          ssh -p 2222 nvidia@127.0.0.1 -o StrictHostKeyChecking=no "ls"
+          ssh -p 2222 nvidia@127.0.0.1 -o StrictHostKeyChecking=no "cd repo_b && tar -zxvf ./binaries/binaries.tar.gz"
